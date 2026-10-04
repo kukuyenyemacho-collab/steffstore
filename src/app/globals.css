@@ -604,7 +604,7 @@ p { margin: 0 0 1em; }
 
 /* ---------- Compare ---------- */
 .compare-wrap { overflow-x: auto; border: 1.5px solid var(--edge); border-radius: var(--radius); }
-.compare { width: 100%; border-collapse: collapse; min-width: 640px; }
+.compare { width: 100%; border-collapse: collapse; min-width: 640px; table-layout: fixed; }
 .compare th, .compare td { padding: var(--s-4); text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); font-size: .92rem; }
 .compare tbody th { width: 180px; font-weight: 600; color: var(--fg-2); background: var(--bg-2); }
 .compare thead td { vertical-align: bottom; }

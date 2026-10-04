@@ -79,10 +79,16 @@ export function CompareView() {
   return (
     <div className="compare-wrap">
       <table className="compare">
+        <colgroup>
+          <col style={{ width: 170 }} />
+          {items.map((p) => (
+            <col key={p.slug} />
+          ))}
+        </colgroup>
         <thead>
           <tr>
-            <th scope="col" className="sr">
-              Feature
+            <th scope="col">
+              <span className="sr">Feature</span>
             </th>
             {items.map((p) => (
               <td key={p.slug}>
