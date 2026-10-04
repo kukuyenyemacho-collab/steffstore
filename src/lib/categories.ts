@@ -1,0 +1,118 @@
+import type { Category, CategorySlug } from './types';
+
+export const categories: Category[] = [
+  {
+    slug: 'phones',
+    name: 'Smartphones',
+    short: 'Phones',
+    art: 'phone',
+    blurb: 'iPhone, Samsung, Tecno, Infinix, Redmi and Pixel.',
+    intro:
+      'From everyday Android to flagship iPhone and Galaxy. Every phone is genuine, sealed and works on Safaricom, Airtel and Telkom from day one.',
+    seoTitle: 'Buy Smartphones in Kenya — iPhone, Samsung, Tecno, Infinix',
+  },
+  {
+    slug: 'laptops',
+    name: 'Laptops',
+    short: 'Laptops',
+    art: 'laptop',
+    blurb: 'MacBook, HP, Dell, Lenovo, ASUS — new and ex-UK.',
+    intro:
+      'Laptops for school, business and gaming. New machines with manufacturer warranty, plus tested ex-UK business laptops that punch well above their price.',
+    seoTitle: 'Buy Laptops in Kenya — MacBook, HP, Dell, Lenovo, ex-UK',
+  },
+  {
+    slug: 'tvs',
+    name: 'TVs',
+    short: 'TVs',
+    art: 'tv',
+    blurb: 'Smart, 4K, QLED and OLED from 32" to 65".',
+    intro:
+      'Smart TVs from Samsung, LG, Hisense, TCL, Sony and Vitron. Free wall-bracket advice, and delivery that arrives upright and insured.',
+    seoTitle: 'Buy Smart TVs in Kenya — Samsung, LG, Hisense, TCL, Sony',
+  },
+  {
+    slug: 'tablets',
+    name: 'Tablets & iPads',
+    short: 'Tablets',
+    art: 'tablet',
+    blurb: 'iPad, Galaxy Tab and Lenovo Tab.',
+    intro: 'Tablets for study, drawing, reading and the kids. Wi‑Fi and cellular models, with cases and pencils to match.',
+    seoTitle: 'Buy Tablets & iPads in Kenya — iPad, Galaxy Tab, Lenovo',
+  },
+  {
+    slug: 'audio',
+    name: 'Audio',
+    short: 'Audio',
+    art: 'headphones',
+    blurb: 'Headphones, earbuds, speakers and soundbars.',
+    intro: 'Noise-cancelling headphones, earbuds, Bluetooth speakers and soundbars from JBL, Sony, Apple, Samsung and Oraimo.',
+    seoTitle: 'Headphones, Earbuds, Speakers & Soundbars in Kenya',
+  },
+  {
+    slug: 'gaming',
+    name: 'Gaming',
+    short: 'Gaming',
+    art: 'controller',
+    blurb: 'PlayStation 5, Xbox, Nintendo Switch and games.',
+    intro: 'Consoles, controllers and games. Sealed regional stock that works with Kenyan accounts and power.',
+    seoTitle: 'PS5, Xbox & Nintendo Switch in Kenya — Consoles & Games',
+  },
+  {
+    slug: 'wearables',
+    name: 'Smartwatches',
+    short: 'Watches',
+    art: 'watch',
+    blurb: 'Apple Watch, Galaxy Watch and fitness bands.',
+    intro: 'Smartwatches and fitness bands that track your steps, sleep and heart rate — and take calls on the go.',
+    seoTitle: 'Smartwatches in Kenya — Apple Watch, Galaxy Watch, Fitness Bands',
+  },
+  {
+    slug: 'monitors',
+    name: 'Monitors & Desktops',
+    short: 'Monitors',
+    art: 'monitor',
+    blurb: 'Office and gaming monitors, all-in-ones and desktops.',
+    intro: 'Office monitors, high-refresh gaming panels, all-in-ones and small-form-factor desktops for the workplace.',
+    seoTitle: 'Monitors & Desktop Computers in Kenya — Dell, Samsung, LG, HP',
+  },
+  {
+    slug: 'cameras',
+    name: 'Cameras',
+    short: 'Cameras',
+    art: 'camera',
+    blurb: 'Mirrorless, action cams and creator gear.',
+    intro: 'Cameras for creators, churches, events and travel — mirrorless bodies, action cams and pocket gimbals.',
+    seoTitle: 'Cameras in Kenya — Canon, GoPro, DJI Creator Gear',
+  },
+  {
+    slug: 'printers',
+    name: 'Printers & Power',
+    short: 'Printers',
+    art: 'printer',
+    blurb: 'Ink-tank, laser and UPS backup power.',
+    intro: 'Ink-tank and laser printers that keep cost per page low, plus UPS units that keep the office running through power cuts.',
+    seoTitle: 'Printers & UPS in Kenya — Epson EcoTank, HP, APC',
+  },
+  {
+    slug: 'networking',
+    name: 'Wi‑Fi & Networking',
+    short: 'Wi‑Fi',
+    art: 'router',
+    blurb: 'Routers, mesh Wi‑Fi, 4G routers and switches.',
+    intro: 'Fix dead zones and share one connection with the whole home or office. Routers, mesh systems, 4G routers and switches.',
+    seoTitle: 'Wi‑Fi Routers, Mesh & 4G Routers in Kenya — TP-Link',
+  },
+  {
+    slug: 'accessories',
+    name: 'Power & Accessories',
+    short: 'Accessories',
+    art: 'powerbank',
+    blurb: 'Power banks, chargers, storage, mice and keyboards.',
+    intro: 'The things that make your devices better: power banks for load-shedding, original chargers, fast storage, mice and keyboards.',
+    seoTitle: 'Power Banks, Chargers & Computer Accessories in Kenya',
+  },
+];
+
+export const categoryBySlug = (slug: string) => categories.find((c) => c.slug === slug);
+export const categoryName = (slug: CategorySlug) => categoryBySlug(slug)?.name ?? slug;

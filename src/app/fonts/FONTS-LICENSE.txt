@@ -1,0 +1,5 @@
+Self-hosted font files in this folder:
+- Unbounded (c) The Unbounded Project Authors — SIL Open Font License 1.1
+- Inter (c) The Inter Project Authors — SIL Open Font License 1.1
+- Dela Gothic One (c) artakana — SIL Open Font License 1.1 (subset: ステフクラウド)
+Full licence text: https://openfontlicense.org
